@@ -234,7 +234,7 @@ http://127.0.0.1:5000
 
 ## 👨‍💻 Author
 
-Rethikaa Ramesh
+
 Developed as a Healthcare Analytics and Machine Learning Project using Flask and Scikit-Learn.
 
 ---
