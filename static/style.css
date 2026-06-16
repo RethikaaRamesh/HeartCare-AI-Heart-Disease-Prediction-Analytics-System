@@ -1,0 +1,444 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Segoe UI',sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        #020617,
+        #0f172a,
+        #1e293b
+    );
+
+    color:white;
+
+    min-height:100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:260px;
+
+    height:100vh;
+
+    background:
+    linear-gradient(
+        180deg,
+        #0f172a,
+        #111827
+    );
+
+    border-right:
+    1px solid rgba(255,255,255,.08);
+
+    padding:25px;
+
+    z-index:1000;
+}
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:40px;
+}
+
+.logo h2{
+
+    color:white;
+
+    margin-bottom:5px;
+
+    font-weight:700;
+}
+
+.logo small{
+
+    color:#94a3b8;
+}
+
+.nav-link-custom{
+
+    display:block;
+
+    color:#e2e8f0;
+
+    text-decoration:none;
+
+    padding:14px 18px;
+
+    margin-bottom:10px;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.nav-link-custom:hover{
+
+    background:
+    rgba(255,255,255,.08);
+
+    color:white;
+}
+
+.active-link{
+
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #3b82f6
+    );
+
+    color:white !important;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:30px;
+    min-height:100vh;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section{
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+
+    padding:35px;
+
+    border-radius:24px;
+
+    margin-bottom:25px;
+
+    width:100%;
+
+    overflow:hidden;
+}
+.hero-section h1{
+
+    font-size:38px;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+}
+
+.hero-section p{
+
+    color:#cbd5e1;
+
+    font-size:16px;
+}
+
+/* =========================
+   GLASS CARD
+========================= */
+
+.glass-card{
+
+    background:
+    rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:30px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.25);
+
+    margin-bottom:25px;
+}
+
+/* =========================
+   PREDICTION FORM
+========================= */
+
+.prediction-card{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:18px;
+}
+
+.form-grid input,
+.form-grid select{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    background:#111827;
+
+    color:white;
+
+    font-size:15px;
+
+    outline:none;
+}
+
+.form-grid input::placeholder{
+
+    color:#94a3b8;
+}
+
+.form-grid select option{
+
+    background:#111827;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.predict-btn{
+
+    grid-column:span 2;
+
+    width:100%;
+
+    margin-top:10px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #22c55e,
+        #16a34a
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.predict-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 6px 20px rgba(34,197,94,.35);
+}
+
+/* =========================
+   RESULT CARD
+========================= */
+
+.result-card{
+
+    text-align:center;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    background:
+    rgba(34,197,94,.15);
+
+    font-size:22px;
+
+    font-weight:700;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+table th{
+
+    background:#1e293b;
+
+    color:white;
+
+    padding:15px;
+}
+
+table td{
+
+    padding:15px;
+
+    border-bottom:
+    1px solid rgba(255,255,255,.08);
+}
+
+/* =========================
+   STAT CARDS
+========================= */
+
+.stat-card{
+
+    background:
+    rgba(255,255,255,.05);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+}
+
+.stat-card h2{
+
+    font-size:32px;
+
+    margin-top:10px;
+}
+
+/* =========================
+   CHART CONTAINER
+========================= */
+
+.chart-card{
+
+    background:
+    rgba(255,255,255,.05);
+
+    border-radius:24px;
+
+    padding:20px;
+
+    margin-bottom:25px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    .sidebar{
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:220px;
+
+    height:100vh;
+
+    padding:20px;
+
+    background:
+    linear-gradient(
+        180deg,
+        #0f172a,
+        #111827
+    );
+
+    border-right:
+    1px solid rgba(255,255,255,.08);
+
+    z-index:1000;
+}
+
+   .layout{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:220px;
+    min-width:220px;
+    background:#0f172a;
+    border-right:1px solid rgba(255,255,255,.08);
+}
+
+.main{
+    width:100%;
+    padding:20px;
+}
+
+.hero-section{
+    margin:0 0 25px 0;
+}
+
+.glass-card{
+    margin-bottom:20px;
+}
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .predict-btn{
+
+        grid-column:span 1;
+    }
+
+    .hero-section h1{
+
+        font-size:28px;
+    }
+}

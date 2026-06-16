@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block title %}
+Reports
+{% endblock %}
+
+{% block content %}
+
+<div class="glass p-4 mb-4">
+
+    <h1>📄 Reports Center</h1>
+
+    <p>
+        Generate and download heart disease prediction reports and analytics summaries.
+    </p>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-4">
+
+        <div class="glass p-4 h-100">
+
+            <h4>🩺 Patient Report</h4>
+
+            <hr>
+
+            <p>
+                Download a detailed patient prediction report.
+            </p>
+
+           <a href="/download-pdf"
+   class="btn btn-success">
+   Download PDF
+        </a>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="glass p-4 h-100">
+
+            <h4>📊 Analytics Report</h4>
+
+            <hr>
+
+            <p>
+                Summary of dashboard analytics and model insights.
+            </p>
+
+            <a href="/export-analytics"
+   class="btn btn-primary">
+   Export Analytics
+</a>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="glass p-4 h-100">
+
+            <h4>🤖 Model Report</h4>
+
+            <hr>
+
+            <p>
+                Feature importance and model performance metrics.
+            </p>
+
+           <a href="/export-model"
+   class="btn btn-warning">
+   Export Model Report
+</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="glass p-4 mt-4">
+
+    <h3>📈 Report Summary</h3>
+
+    <hr>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <h5>Total Records</h5>
+            <h2>{{ total }}</h2>
+        </div>
+
+        <div class="col-md-3">
+            <h5>Disease Cases</h5>
+            <h2>{{ disease }}</h2>
+        </div>
+
+        <div class="col-md-3">
+            <h5>Healthy Cases</h5>
+            <h2>{{ healthy }}</h2>
+        </div>
+
+        <div class="col-md-3">
+            <h5>Model Accuracy</h5>
+            <h2>98%</h2>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="glass p-4 mt-4">
+
+    <h3>🧠 Recommendations</h3>
+
+    <hr>
+
+    <ul>
+
+        <li>Monitor cholesterol levels regularly.</li>
+
+        <li>Maintain healthy blood pressure.</li>
+
+        <li>Perform cardiovascular screening after age 40.</li>
+
+        <li>Use AI predictions as a supporting tool, not a medical diagnosis.</li>
+
+    </ul>
+
+</div>
+
+{% endblock %}
